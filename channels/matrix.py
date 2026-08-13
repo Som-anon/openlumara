@@ -215,7 +215,7 @@ class Matrix(core.channel.Channel):
             self._ready = True
             self.running = True
 
-            await self.announce(
+            await self._announce(
                 f"Matrix connected as {self.user_id} (E2EE enabled).", "status"
             )
 
